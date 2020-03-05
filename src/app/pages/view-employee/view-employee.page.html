@@ -1,0 +1,34 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>viewEmployee</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{employee.name.firtsname}} {{employee.name.lastname}}</ion-card-title>
+      <ion-card-subtitle>Fecha de contratacion: {{employee.date}}</ion-card-subtitle>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h3>RFC: {{employee.RFC}}</h3>
+      <h3>Salario: {{employee.salary}}</h3>
+      <h3>Clave: {{employee.key}}</h3>
+      <h3>Correo: {{employee.email}}</h3>
+      <h3>Tipo de empleado: {{employee.type}}</h3>
+    </ion-card-content>
+    <ion-chip color="danger" *ngIf = "!employee.activate">
+      <ion-label>Inactivo</ion-label>
+    </ion-chip>
+    <ion-chip color="secondary" *ngIf = "employee.activate">
+      <ion-label>Inactivo</ion-label>
+    </ion-chip>
+ 
+  </ion-card>
+
+
+
+</ion-content>
