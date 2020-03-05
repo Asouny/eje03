@@ -13,8 +13,9 @@
     </ion-toolbar>
   </ion-header>
 
+  
 <ion-list *ngFor="let employee of employees">
-  <ion-item (dblclick)="edit()" (click)="view(employee)">
+  <ion-item (click)="view(employee)" (dblclick)="doubleClickFunction()" >
     <ion-label>{{employee.name.firtsname}}</ion-label>
     <ion-label>{{employee.name.lastname}}</ion-label>
     <ion-label>{{employee.key}}</ion-label>

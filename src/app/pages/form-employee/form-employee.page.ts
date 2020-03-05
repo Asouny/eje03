@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
 import {ActivatedRoute , Router} from "@angular/router"
 
 @Component({
@@ -17,7 +16,9 @@ export class FormEmployeePage implements OnInit {
     );
 
    }
+
   ngOnInit() {
   }
 
 }
+

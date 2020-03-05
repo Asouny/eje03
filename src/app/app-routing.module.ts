@@ -11,11 +11,12 @@ const routes: Routes = [
   {
     path: 'form-employee',
     loadChildren: () => import('./pages/form-employee/form-employee.module').then( m => m.FormEmployeePageModule)
-  },
+  }
 ];
 
 @NgModule({
   imports: [
+    
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
   exports: [RouterModule]
